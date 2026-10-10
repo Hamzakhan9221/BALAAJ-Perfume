@@ -1,0 +1,66 @@
+.pcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #151413;
+  border: 1px solid #2a2520;
+  border-radius: 14px;
+  padding: 16px;
+  transition: transform 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
+.pcard:hover {
+  transform: translateY(-8px);
+  border-color: #d4af6a;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(212, 175, 106, 0.12);
+}
+.pimg {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: radial-gradient(circle, #2a2216, #121110);
+  overflow: hidden;
+}
+.art { width: 70%; transition: transform 0.5s; }
+.art.tall { width: 42%; }
+.pcard:hover .art { transform: scale(1.12) rotate(-4deg); }
+.ptag {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  z-index: 1;
+  background: #d4af6a;
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.ptag.so { background: #6b2222; color: #fff; }
+.pcard h3 {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+.pprice { color: #d4af6a; font-weight: 600; font-size: 17px; margin: 0 0 14px; }
+.pcard button {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  color: #d4af6a;
+  border: 1px solid #d4af6a;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pcard button:hover:not(:disabled) { background: #d4af6a; color: #000; }
+.pcard button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+@media (max-width: 600px) {
+  .pcard { padding: 10px; }
+  .ptag { top: 18px; left: 18px; }
+  .pcard h3 { font-size: 13px; }
+}

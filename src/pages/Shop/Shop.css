@@ -1,0 +1,27 @@
+.page-hero {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background: radial-gradient(circle at 50% 0, #2b2214, #0b0b0b 70%);
+  border-bottom: 1px solid #2a2520;
+}
+.page-hero small { color: #d4af6a; letter-spacing: 5px; font-size: 12px; }
+.page-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 6vw, 52px);
+  margin: 8px 0 18px;
+  background: linear-gradient(180deg, #f1d58a, #d4af6a 45%, #a8812f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tabs { display: flex; gap: 12px; justify-content: center; }
+.tabs a {
+  padding: 8px 20px;
+  border: 1px solid #8a6a2b;
+  border-radius: 999px;
+  color: #d4af6a;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.tabs a:hover { background: #d4af6a; color: #000; }

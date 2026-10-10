@@ -1,0 +1,8 @@
+.policy { max-width: 800px; }
+.policy h2 {
+  font-family: "Playfair Display", serif;
+  color: #d4af6a;
+  font-size: 22px;
+  margin: 28px 0 8px;
+}
+.policy p { color: #c9bfae; line-height: 1.8; margin: 0; }

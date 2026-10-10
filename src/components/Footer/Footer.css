@@ -1,0 +1,43 @@
+.footer { background: #070707; border-top: 1px solid #8a6a2b; margin-top: 0; }
+.footer-grid {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 44px 20px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 30px;
+}
+.f-logo {
+  font-family: "Cinzel Decorative", "Playfair Display", serif;
+  font-size: 26px;
+  letter-spacing: 5px;
+  background: linear-gradient(180deg, #f1d58a, #d4af6a 45%, #a8812f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer p { color: #a89f8f; font-size: 14px; line-height: 1.7; }
+.footer h4 {
+  color: #d4af6a;
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+.footer a,
+.footer span {
+  display: block;
+  color: #a89f8f;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.footer a:hover { color: #d4af6a; }
+.footer-bottom {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  color: #6f675b;
+  border-top: 1px solid #1c1a17;
+}

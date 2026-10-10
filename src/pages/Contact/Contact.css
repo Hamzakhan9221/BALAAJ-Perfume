@@ -1,0 +1,39 @@
+.contact-grid { display: grid; gap: 40px; }
+@media (min-width: 800px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+.contact-info h2 { font-family: "Playfair Display", serif; color: #d4af6a; margin-top: 0; }
+.contact-info p { color: #a89f8f; }
+.wa-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  background: #25d366;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.note { font-size: 13px; }
+.contact-form { display: grid; gap: 14px; }
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  background: #151413;
+  border: 1px solid #2a2520;
+  color: #f5efe3;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus { outline: none; border-color: #d4af6a; }
+.contact-form button {
+  padding: 14px;
+  background: linear-gradient(135deg, #f1d58a, #d4af6a, #a8812f);
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-form button:disabled { opacity: 0.6; }
+.ok { color: #6fd08c; margin: 0; }
+.err { color: #e07a7a; margin: 0; }
