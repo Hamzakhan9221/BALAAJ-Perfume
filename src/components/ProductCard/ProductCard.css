@@ -13,6 +13,7 @@
   border-color: #d4af6a;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(212, 175, 106, 0.12);
 }
+
 .pimg {
   aspect-ratio: 1;
   display: grid;
@@ -21,9 +22,18 @@
   background: radial-gradient(circle, #2a2216, #121110);
   overflow: hidden;
 }
+.pimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+.pcard:hover .pimg img { transform: scale(1.08); }
+
 .art { width: 70%; transition: transform 0.5s; }
 .art.tall { width: 42%; }
 .pcard:hover .art { transform: scale(1.12) rotate(-4deg); }
+
 .ptag {
   position: absolute;
   top: 26px;
@@ -37,6 +47,7 @@
   border-radius: 999px;
 }
 .ptag.so { background: #6b2222; color: #fff; }
+
 .pcard h3 {
   flex: 1;
   font-size: 15px;
@@ -44,7 +55,13 @@
   margin: 16px 0 8px;
   font-weight: 600;
 }
-.pprice { color: #d4af6a; font-weight: 600; font-size: 17px; margin: 0 0 14px; }
+.pprice {
+  color: #d4af6a;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0 0 14px;
+}
+
 .pcard button {
   width: 100%;
   padding: 12px;

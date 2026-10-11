@@ -34,11 +34,18 @@ export default function ProductCard({ p, index = 0, onAdd }) {
       transition={{ delay: (index % 4) * 0.1, duration: 0.6 }}
     >
       {p.tag && <span className={`ptag ${p.soldOut ? "so" : ""}`}>{p.tag}</span>}
+
       <div className="pimg">
-        <Art type={p.type} color={p.color} />
+        {p.image ? (
+          <img src={p.image} alt={p.name} loading="lazy" />
+        ) : (
+          <Art type={p.type} color={p.color} />
+        )}
       </div>
+
       <h3>{p.name}</h3>
       <p className="pprice">Rs. {p.price.toLocaleString()}</p>
+
       <button disabled={p.soldOut} onClick={() => onAdd && onAdd(p)}>
         {p.soldOut ? "Sold Out" : "Add to Cart"}
       </button>
